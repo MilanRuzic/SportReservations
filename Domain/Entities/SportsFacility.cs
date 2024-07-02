@@ -33,8 +33,8 @@ namespace Domain.Entities
         [StringLength(255)]
         public string Email { get; set; } = string.Empty;
         public CityCodes City { get; set; }
-        public ICollection<SportsField>? SportsFields { get; set; }
-        public ICollection<Image>? Images { get; set; }
-        public ICollection<FacilityAdministrators>? Administrators { get; set; }
+        public ICollection<SportsField> SportsFields { get; set; }
+        public ICollection<Image> Images { get; set; }
+        public ICollection<FacilityAdministrators> Administrators { get; set; }
     }
 }

@@ -42,6 +42,6 @@ namespace Domain.Entities
         public SurfaceCodes Surface { get; set; }
         public CityCodes City { get; set; }
         public ICollection<SportsFieldRelation> Sports { get; set; }
-        public ICollection<Image>? Images { get; set; }
+        public ICollection<Image> Images { get; set; }
     }
 }

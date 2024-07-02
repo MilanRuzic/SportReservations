@@ -20,7 +20,7 @@ namespace Domain.Entities
         [Required]
         [StringLength(500)]
         public string Path { get; set; }
-        public SportsFacility? SportsFacility { get; set; }
-        public SportsField? SportsField { get; set; }
+        public SportsFacility SportsFacility { get; set; }
+        public SportsField SportsField { get; set; }
     }
 }
