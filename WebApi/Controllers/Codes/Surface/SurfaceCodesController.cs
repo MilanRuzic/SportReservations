@@ -4,7 +4,7 @@ using Application.BusinessLogic.Surface.Commands.Update;
 using Application.BusinessLogic.Surface.Queries.GetAllQuery;
 using Application.BusinessLogic.Surface.Queries.GetById;
 using MediatR;
-using WebApi.Controllers.BaseController;
+using WebApi.Controllers.ApiBaseController;
 
 namespace WebApi.Controllers.Codes.Surface;
 

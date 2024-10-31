@@ -6,21 +6,16 @@ using Application.BusinessLogic.City.Queries.GetById;
 using Application.Common.Infrastructure.Settings;
 using MediatR;
 using Microsoft.Extensions.Options;
-using WebApi.Controllers.BaseController;
+using WebApi.Controllers.ApiBaseController;
 
 namespace WebApi.Controllers.Codes.City;
 
-public class CityCodesController
-    : ApiBaseController<
-        CreateCityCodesCommand,
-        DeleteCityCodesCommand,
-        UpdateCityCodesCommand,
-        GetAllCityCodesViewModel,
-        CityCodesViewModel,
-        GetAllCityCodesQuery,
-        GetCityCodesByIdQuery
-    >
-{
-    public CityCodesController(ISender mediator)
-        : base(mediator) { }
-}
+public class CityCodesController(ISender mediator) : ApiBaseController<
+    CreateCityCodesCommand,
+    DeleteCityCodesCommand,
+    UpdateCityCodesCommand,
+    GetAllCityCodesViewModel,
+    CityCodesViewModel,
+    GetAllCityCodesQuery,
+    GetCityCodesByIdQuery
+>(mediator);

@@ -7,7 +7,7 @@ using Application.Common.Infrastructure.Settings;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
-using WebApi.Controllers.BaseController;
+using WebApi.Controllers.ApiBaseController;
 
 namespace WebApi.Controllers.Codes.Sport;
 
